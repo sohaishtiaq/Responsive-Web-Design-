@@ -1,0 +1,70 @@
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+form {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  box-sizing: border-box;
+}
+
+input:first-of-type {
+  border-radius: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+.radio-group {
+  margin: 10px 0 20px;
+}
+
+.radio-group input[type="radio"] {
+  width: auto;
+  margin: 5px;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: blue;
+  background-color: lightblue;
+  box-shadow: 0 0 5px blue;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
