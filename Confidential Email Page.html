@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+
+  <style>
+    #email {
+      padding: 50px;
+      margin-top: 50px;
+      width: 500px;
+      box-sizing: border-box;
+      border: 2px solid black;
+    }
+
+    #confidential,
+    #top-secret {
+      display: inline-block;
+      padding: 10px;
+      margin-left: 20px;
+      border: 2px solid red;
+      transform: rotate(-10deg);
+      font-weight: bold;
+    }
+
+    #confidential {
+      color: red;
+    }
+
+    #top-secret {
+      color: darkred;
+      transform: rotate(10deg);
+    }
+
+    .blurred {
+      filter: blur(3px);
+    }
+  </style>
+</head>
+
+<body>
+  <main id="email">
+
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+
+    <p>
+      Dear Employee, this email contains
+      <span class="blurred">sensitive company information</span>
+      that must not be shared.
+    </p>
+
+    <p>
+      The upcoming project details are
+      <span class="blurred">strictly confidential</span>
+      until the official announcement.
+    </p>
+
+    <p>
+      Please keep the
+      <span class="blurred">security access codes</span>
+      safe and do not disclose them to anyone.
+    </p>
+
+  </main>
+</body>
+</html>
