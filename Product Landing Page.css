@@ -1,0 +1,188 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#header-img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+main {
+  padding-top: 75px;
+}
+
+section {
+  padding: 70px 8%;
+  text-align: center;
+  scroll-margin-top: 75px;
+}
+
+#hero {
+  background-color: #e3efff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+#form {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#email {
+  width: 300px;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+#submit {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #0056b3;
+}
+
+.features-container,
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature,
+.price-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  max-width: 320px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.feature h3,
+.price-card h3 {
+  margin-bottom: 12px;
+  color: #007bff;
+}
+
+#video {
+  display: block;
+  max-width: 100%;
+  margin: 25px auto 0;
+  border: none;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #222;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #nav-bar {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  main {
+    padding-top: 115px;
+  }
+
+  section {
+    padding: 45px 5%;
+    scroll-margin-top: 115px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #email,
+  #submit {
+    width: 100%;
+    max-width: 320px;
+  }
+}
