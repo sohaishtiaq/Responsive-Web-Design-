@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="header">
+    <img
+      id="header-img"
+      src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png"
+      alt="Product logo"
+    >
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How It Works</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <h1>Discover Your Perfect Product</h1>
+      <p>Smart design, reliable quality, and everyday convenience.</p>
+
+      <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        >
+        <input type="submit" id="submit" value="Get Started">
+      </form>
+    </section>
+
+    <section id="features">
+      <h2>Our Features</h2>
+
+      <div class="features-container">
+        <div class="feature">
+          <h3>Premium Quality</h3>
+          <p>Designed with quality materials for dependable everyday use.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Easy to Use</h3>
+          <p>A simple and practical design that fits your lifestyle.</p>
+        </div>
+
+        <div class="feature">
+          <h3>Great Value</h3>
+          <p>Useful features at a price that makes sense.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works">
+      <h2>How It Works</h2>
+      <p>Watch the video to learn more about our product.</p>
+
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY"
+        title="Product demonstration video"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="pricing">
+      <h2>Choose Your Plan</h2>
+
+      <div class="pricing-container">
+        <div class="price-card">
+          <h3>Basic</h3>
+          <p class="price">$19</p>
+          <p>Essential features</p>
+        </div>
+
+        <div class="price-card">
+          <h3>Standard</h3>
+          <p class="price">$39</p>
+          <p>More useful features</p>
+        </div>
+
+        <div class="price-card">
+          <h3>Premium</h3>
+          <p class="price">$59</p>
+          <p>The complete experience</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Product Landing Page | Built with HTML and CSS</p>
+  </footer>
+
+</body>
+</html>
