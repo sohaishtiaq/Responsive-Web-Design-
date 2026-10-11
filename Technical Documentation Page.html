@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#JavaScript_Basics">JavaScript Basics</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Arrays">Arrays</a>
+  </nav>
+
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a programming language used to make web pages interactive.</p>
+      <p>It works alongside HTML and CSS to create dynamic websites.</p>
+      <p>JavaScript can run directly in a web browser.</p>
+      <code>console.log("Hello, World!");</code>
+      <ul>
+        <li>JavaScript is widely used in web development.</li>
+        <li>It supports both frontend and backend development.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_Basics">
+      <header>JavaScript Basics</header>
+      <p>JavaScript statements are instructions that a computer executes.</p>
+      <p>Statements are often separated by semicolons.</p>
+      <p>Comments help explain your code to other developers.</p>
+      <code>let message = "Welcome";</code>
+      <code>console.log(message);</code>
+      <ul>
+        <li>Use meaningful variable names.</li>
+        <li>Indent your code for readability.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store values that can be used throughout a program.</p>
+      <p>You can declare variables using let, const, or var.</p>
+      <p>Use let when a variable's value needs to change.</p>
+      <code>let age = 20;</code>
+      <code>const country = "Pakistan";</code>
+      <ul>
+        <li>Use const for bindings that should not be reassigned.</li>
+        <li>Use let for values that may change.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code designed to perform a task.</p>
+      <p>A function can accept parameters and return a value.</p>
+      <p>You can call a function whenever you need its functionality.</p>
+      <code>function greet() {</code>
+      <code>  console.log("Hello!");</code>
+      <code>}</code>
+      <code>greet();</code>
+      <ul>
+        <li>Functions help reduce repeated code.</li>
+        <li>Parameters allow functions to receive input.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops execute a block of code repeatedly.</p>
+      <p>A for loop is useful when you know how many times to repeat an action.</p>
+      <p>A while loop continues while its condition remains true.</p>
+      <code>for (let i = 0; i < 5; i++) {</code>
+      <code>  console.log(i);</code>
+      <code>}</code>
+      <ul>
+        <li>Use loops to process collections of data.</li>
+        <li>Make sure loop conditions eventually become false.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Arrays">
+      <header>Arrays</header>
+      <p>An array stores multiple values in a single variable.</p>
+      <p>Array indexes start at zero.</p>
+      <p>You can add, remove, or access elements using array methods.</p>
+      <code>const colors = ["red", "green", "blue"];</code>
+      <code>console.log(colors[0]);</code>
+      <ul>
+        <li>Use push() to add an item to the end.</li>
+        <li>Use pop() to remove the last item.</li>
+        <li>Use length to find the number of elements.</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>
